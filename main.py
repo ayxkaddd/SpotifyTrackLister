@@ -57,7 +57,8 @@ def get_tracks(offset):
 def main():
     offset = -20
     limit = 20
-    for i in range(count_of_added_tracks): # count of added tracks / 20
+    count_of_added_tracks = 439
+    for i in range(round(count_of_added_tracks / 20)): # count of added tracks / 20
         offset += limit
         get_tracks(offset)
 
